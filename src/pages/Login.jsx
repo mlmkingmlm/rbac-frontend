@@ -49,11 +49,10 @@ export default function Login() {
           </div>
 
           <button className="btn btn-primary w-100">Login</button>
-          <p className="mt-3 text-center">
+        </form>
+                  <p className="mt-3 text-center">
             Don’t have an account? <a href="/register">Register</a>
           </p>
-
-        </form>
       </div>
     </div>
   );
