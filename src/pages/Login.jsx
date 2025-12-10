@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { AuthContext } from "../contexts/AuthContext";
 import api from "../api/api";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -51,7 +51,7 @@ export default function Login() {
           <button className="btn btn-primary w-100">Login</button>
         </form>
                   <p className="mt-3 text-center">
-            Don’t have an account? <a href="/register">Register</a>
+            Don’t have an account? <Link to="/register">Register</Link>
           </p>
       </div>
     </div>
